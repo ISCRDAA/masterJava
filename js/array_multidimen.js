@@ -1,7 +1,13 @@
 'use strict'
 //Arrays multidimencionales 
 var categoria=["Accion","Terror","Comedia","Romance"];
-var peliculas=["star wars","Elementos","Toystory","cars"];
+var peliculas=["Star wars","Elementos","Toystory","Cars"];
+
+//ordenamiento de arrays
+peliculas.sort();
+peliculas.reverse();
+
+console.log(peliculas);
 
 var cine=[categoria,peliculas];
 
@@ -25,9 +31,28 @@ console.log(texto_peliculas);
 
 
 //convertir un string a un array
-var cadena="hola mundo,mama,papa";
+var cadena="hola mundo,mama,papa,angel,alan,lilia,pupis";
 var cadena_array=cadena.split(",");
+
+//recorrer un array con un for in
+for(let cadena_a in cadena_array){
+    console.log(cadena_array[cadena_a]);
+}
+
+
+cadena_array.sort();
 console.log(cadena_array);
+
+//Buscar dentre de un array
+var precios=[1,2,3,4,5,6,7,8,9,10,12,14,16,28,32];
+
+//busqueda cumpliendo una condicion retorna un true o un false
+var busqueda_precio=precios.some(dato => dato>=290);
+console.log(busqueda_precio);
+
+//busqueda por su index
+var busqueda=cadena_array.findIndex(dato => dato=="papa");
+console.log(busqueda);
 
 
 
