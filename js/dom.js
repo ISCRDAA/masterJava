@@ -39,4 +39,30 @@ console.log(divs);
 //});
 
 
+//seleccionar una parte del documento con su clase
+
+var div_rojo=document.getElementsByClassName('rojo');
+console.log(div_rojo);
+var div;
+
+for(div in div_rojo){
+    if(div_rojo[div].className == "rojo"){
+        div_rojo[div].style.background="green";
+
+    }
+
+}
+var div_amarillo=document.getElementsByClassName('amarillo');
+console.log(div_amarillo);
+div_amarillo[0].style.background="orange";
+
+//query selector con  clases
+var encabezado=document.querySelector("#encabezado");
+console.log(encabezado);
+
+var titulo=document.querySelectorAll(".titulo");
+console.log(titulo);
+
+
+
 
