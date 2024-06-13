@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+
+  <style>
+    body {
+      background: lightgray;
+    }
+    .box {
+      width: 250px;
+      height: 250px;
+      float: left;
+      margin: 20px;
+    }
+    .dashed {
+      border: 3px dashed black;
+      padding: 3px;
+    }
+  </style>
+
+  <!-- tener un formulario con los campos nombre apellido y edad y un boton para enviar el formulario con un evento sumbit y despues de madar el formulrio mostrar los datos por pantalla, tener un boton que al darle click nos muestra los datos actuales en el formulario, y validacion del formulario. -->
+
+  <body>
+    <h1>Ejercicio del doom eventos y funciones curso js</h1>
+    <p>Ingrese sus datos en el siguiente formulario:</p>
+    <div class="box">
+        <form action="#" id="formulario" onsubmit="return false">
+          <label for="nombre">Ingrese su nombre: </label>
+          <input type="text" name="nombre" id="nombre" />
+          <br />
+          <br />
+          <label for="apellido">Ingrese su apellido:</label>
+          <input type="text" name="apellido" id="apellido" />
+          <br />
+          <br />
+          <label for="edad">Ingrese su edad:</label>
+          <input type="number" name="edad" id="edad" />
+          <br />
+          <br />
+          <input type="submit" value="enviar" id="sumbit" />
+        </form>
+    </div>
+    <div class="box dashed">
+        <h3>Informacion del usuario:</h3>
+        <hr>
+        <p id="datos"></p>
+    </div>
+    
+  </body>
+  <script src="js/ejercicio_doom.js"></script>
+</html>

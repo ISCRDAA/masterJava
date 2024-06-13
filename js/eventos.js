@@ -9,7 +9,7 @@ function cambiar_Color(){
     if(bg=="green"){
         boton.style.background="red";
         boton.style.padding="10px"
-        boton.style.border="1px solid #ccc"
+        this.style.border="10px solid black"
 
     }else{
         bg="green";
@@ -20,7 +20,7 @@ function cambiar_Color(){
 
 //Hacer el click en el boton desde java script
 var boton =document.querySelector("#boton");
-boton.addEventListener('click',cambiar_Color,true);
+boton.addEventListener('click',cambiar_Color);
 
 //mouse over 
 boton.addEventListener("mouseover",function(){
