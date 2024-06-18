@@ -8,14 +8,9 @@
 <body>
     <h1>Peliculas </h1>
     <div>
-        <form action="#" id="form_peliculas">
+        <form action="" id="form_peliculas">
             <label for="nombre_pelicula" >Ingrese el nombre de la pelicula</label>
             <input type="text" id="nombre">
-            <br>
-            <br>
-
-            <label for="descripcion" >Ingrese la descripcion de la pelicula</label>
-            <input type="text" id="descripcion">
             <br>
             <br>
             <button type="submit" id="guardar">Guardar</button>
@@ -25,10 +20,25 @@
 
     <div id="mostrar">
         <h2>Las peliculas añadidas</h2>
+        <ul id="lista">
+
+        </ul>
+    </div>
+
+    <h2>Borre su pelicula </h2>
+    <div>
+        <form action="" id="form_peliculasB">
+            <label for="nombre_pelicula" >Borra tu pelicula</label>
+            <input type="text" id="nombre_borrar">
+            <br>
+            <br>
+            <button type="submit" id="borrar">Borrar</button>
+        </form>
 
     </div>
     
     
 </body>
 <script src="/js/ejercicio_local_storage.js"></script>
+<script src="/js/prueba_face.js"></script>
 </html>
